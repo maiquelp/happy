@@ -35,9 +35,9 @@
 </strong>
 <br>
 
-<!-- <p align="center">
-    <img alt="Screens" src=".github/screens.png" />
-</p> -->
+<p align="center">
+    <img alt="Screens" src=".github/happy-screens.png" />
+</p>
 
 ## :bookmark: Sobre
 
