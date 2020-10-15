@@ -12,7 +12,7 @@ function Landing() {
     <div className="content-wrapper">
       <img src={logoImg} alt="happy"/>
       <main>
-        <h1>Spread happiness for the world</h1>
+        <h1>Spread happiness to the world</h1>
         <p>Visit orphanages and change the day for a lot of children.</p>
       </main>
       <div className="location">
