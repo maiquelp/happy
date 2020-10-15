@@ -93,21 +93,26 @@ export default function CreateOrphanage() {
           <fieldset>
             <legend>Data</legend>
 
-            <Map 
-              center={mapPosition} 
-              style={{ width: '100%', height: 280 }}
-              zoom={10}
-              onclick={handleMapClick}>
+            <div className="input-block">
+              <label htmlFor="map">Pin your location</label>
+              <Map 
+                center={mapPosition} 
+                style={{ width: '100%', height: 280 }}
+                zoom={10}
+                onclick={handleMapClick}
+                id="map"
+              >
 
-              <TileLayer 
-                url={`https://api.mapbox.com/styles/v1/mapbox/light-v10/tiles/256/{z}/{x}/{y}@2x?access_token=${process.env.REACT_APP_MAPBOX_TOKEN}`}
-              />
+                <TileLayer 
+                  url={`https://api.mapbox.com/styles/v1/mapbox/light-v10/tiles/256/{z}/{x}/{y}@2x?access_token=${process.env.REACT_APP_MAPBOX_TOKEN}`}
+                />
 
-              {position.latitude !== 0
-                && <Marker interactive={false} icon={MapIcon} position={[position.latitude,position.longitude]} />
-              }
+                {position.latitude !== 0
+                  && <Marker interactive={false} icon={MapIcon} position={[position.latitude,position.longitude]} />
+                }
 
-            </Map>
+              </Map>
+            </div>
 
             <div className="input-block">
               <label htmlFor="name">Name</label>
@@ -133,7 +138,7 @@ export default function CreateOrphanage() {
                 </label>
               </div>
 
-              <input type="file" id="image[]" multiple onChange={handleSelectImages}/>
+              <input type="file" id="image[]" multiple onChange={handleSelectImages} required />
 
             </div>
           </fieldset>
