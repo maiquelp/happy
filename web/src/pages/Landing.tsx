@@ -16,8 +16,8 @@ function Landing() {
         <p>Visit orphanages and change the day for a lot of children.</p>
       </main>
       <div className="location">
-        <strong>Petrópolis</strong>
-        <span>Rio de Janeiro</span>
+        <strong>be</strong>
+        <span>happy!</span>
       </div>
       <Link to="/app" className="enter-app">
         <FiArrowRight size={26} color="rgba(0, 0, 0, 0.6)" />  

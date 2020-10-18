@@ -44,9 +44,9 @@ function OrphanagesMap() {
         </header>
 
         <footer>
-          <strong>Petrópolis</strong>
+          <strong>be</strong>
           <br/>
-          <span>Rio de Janeiro</span>
+          <span>happy!</span>
         </footer>
       </aside>
       
