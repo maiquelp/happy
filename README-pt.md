@@ -30,7 +30,8 @@
   <a href="#computer-tecnologias">Tecnologias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#wrench-ferramentas">Ferramentas</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#package-instalação">Instalação</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#memo-licença">Licença</a>
+  <a href="#memo-licença">Licença</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;<a href="#camera_flash-screenshots">Screenshots</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#memo-license">License</a>
 </p>
 </strong>
 <br>
@@ -123,6 +124,32 @@ Os seguintes softwares devem estar instalados:
   # Running mobile app
   $ yarn start # or npm start
 ```
+
+<br>
+
+
+## :camera_flash: Screenshots
+
+- Web
+
+
+![Home](.github/screenshots/home.png)
+![Map](.github/screenshots/map.png)
+![Creation](.github/screenshots/creation.png)
+![Details](.github/screenshots/details.png)
+
+- Mobile
+
+
+<img src=".github/screenshots/m.splash.png" alt="Splash" width="270" height="560"/>
+<img src=".github/screenshots/m.onboarding1.png" alt="Onboarding1" width="270" height="560"/>
+<img src=".github/screenshots/m.onboarding2.png" alt="Onboarding2" width="270" height="560"/>
+<img src=".github/screenshots/m.orp.map.png" alt="Map" width="270" height="560"/>
+<img src=".github/screenshots/m.orp.data.png" alt="Data" width="270" height="560"/>
+<img src=".github/screenshots/m.orp.data2.png" alt="Data2" width="270" height="560"/>
+<img src=".github/screenshots/m.pin.png" alt="Pin" width="270" height="560"/>
+<img src=".github/screenshots/m.data.png" alt="Data3" width="270" height="560"/>
+<img src=".github/screenshots/m.data2.png" alt="Data4" width="270" height="560"/>
 
 <br>
 

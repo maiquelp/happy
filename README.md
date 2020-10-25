@@ -139,15 +139,15 @@ The following software must be installed:
 - Mobile
 
 
-![Splash](.github/screenshots/m.splash.png)
-![Onboarding1](.github/screenshots/m.onboarding1.png)
-![Onboarding2](.github/screenshots/m.onboarding2.png)
-![Map](.github/screenshots/m.orp.map.png)
-![Data](.github/screenshots/m.orp.data.png)
-![Data2](.github/screenshots/m.orp.data2.png)
-![Pin](.github/screenshots/m.pin.png)
-![Data3](.github/screenshots/m.data.png)
-![Data4](.github/screenshots/m.data2.png)
+<img src=".github/screenshots/m.splash.png" alt="Splash" width="270" height="560"/>
+<img src=".github/screenshots/m.onboarding1.png" alt="Onboarding1" width="270" height="560"/>
+<img src=".github/screenshots/m.onboarding2.png" alt="Onboarding2" width="270" height="560"/>
+<img src=".github/screenshots/m.orp.map.png" alt="Map" width="270" height="560"/>
+<img src=".github/screenshots/m.orp.data.png" alt="Data" width="270" height="560"/>
+<img src=".github/screenshots/m.orp.data2.png" alt="Data2" width="270" height="560"/>
+<img src=".github/screenshots/m.pin.png" alt="Pin" width="270" height="560"/>
+<img src=".github/screenshots/m.data.png" alt="Data3" width="270" height="560"/>
+<img src=".github/screenshots/m.data2.png" alt="Data4" width="270" height="560"/>
 
 <br>
 
