@@ -4,7 +4,7 @@ import { Map, Marker, TileLayer } from 'react-leaflet';
 
 import { LeafletMouseEvent } from 'leaflet';
 
-import { FiPlus } from "react-icons/fi";
+import { FiPlus, FiX } from "react-icons/fi";
 
 import '../styles/pages/create-orphanage.css';
 
@@ -17,7 +17,7 @@ export default function CreateOrphanage() {
   const history = useHistory();
 
   const [position, setPosition] = useState({latitude: 0, longitude: 0});
-  const [mapPosition, setMapPosition] = useState<[number, number]>([-15.7745457, -48.3575684]);
+  const [mapPosition, setMapPosition] = useState<[number, number]>([-15.7960843,-47.9470249]);
 
   const [name, setName] = useState('');
   const [about, setAbout] = useState('');
@@ -73,11 +73,25 @@ export default function CreateOrphanage() {
       return;
     }
 
-    const selectedImages = Array.from(event.target.files);
+    const selectedImages = images.concat(Array.from(event.target.files));
 
     setImages(selectedImages);
 
-    const selectedImagesPreview = selectedImages.map(element => {
+    setImagesPreview(selectedImages);
+  }
+
+  function handleDelete(element: number) {
+    
+    images.splice(element, 1);
+    const newImages = images;
+
+    setImages(newImages);
+
+    setImagesPreview(newImages);
+  }
+
+  function setImagesPreview(images:File[]) {
+    const selectedImagesPreview = images.map(element => {
       return URL.createObjectURL(element);
     });
 
@@ -102,6 +116,7 @@ export default function CreateOrphanage() {
                 onclick={handleMapClick}
                 id="map"
               >
+                {/* <TileLayer url="https://a.tile.openstreetmap.org/{z}/{x}/{y}.png" /> */}
 
                 <TileLayer 
                   url={`https://api.mapbox.com/styles/v1/mapbox/light-v10/tiles/256/{z}/{x}/{y}@2x?access_token=${process.env.REACT_APP_MAPBOX_TOKEN}`}
@@ -128,9 +143,16 @@ export default function CreateOrphanage() {
               <label htmlFor="images">Photos</label>
 
               <div className="images-container">
-                {previewImages.map(element => {
+                {previewImages.map((element, index) => {
                   return (
-                    <img src={element} alt={name} key={element}/>
+                    <div className="images-container-item" key={index}>
+                      <img src={element} alt={element} />
+                        <div className="images-container-item-del">
+                          <button type="button" onClick={() => handleDelete(index)} >
+                            <FiX size={24} color="#FF669D" />
+                          </button> 
+                        </div>
+                    </div>
                   )
                 })}
                 <label htmlFor="image[]" className="new-image">

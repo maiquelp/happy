@@ -20,7 +20,7 @@ interface Orphanage {
 
 function OrphanagesMap() {
   const [orphanages, setOrphanages] = useState<Orphanage[]>([]);
-  const [mapPosition, setMapPosition] = useState<[number, number]>([-15.7745457, -48.3575684]);
+  const [mapPosition, setMapPosition] = useState<[number, number]>([-15.7960843,-47.9470249]);
 
   useEffect(() => {
     api.get('orphanages').then(res => {
